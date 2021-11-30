@@ -1,4 +1,4 @@
-var tasks = {};
+var tasks = [];
 
 var createTask = function(taskText, taskDate, taskList) {
   // create elements that make up a task item
@@ -73,7 +73,7 @@ $("#task-form-modal .btn-primary").click(function() {
     $("#task-form-modal").modal("hide");
 
     // save in tasks array
-    tasks.toDo.push({
+    tasks.push({
       text: taskText,
       date: taskDate
     });
